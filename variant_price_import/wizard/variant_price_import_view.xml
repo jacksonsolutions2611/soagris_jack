@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_variant_price_import_form" model="ir.ui.view">
+        <field name="name">Variant Price Import</field>
+        <field name="model">variant.price.import</field>
+        <field name="arch" type="xml">
+            <form string="Invoice Sales Order">
+                <p class="oe_grey">
+        Select Variant Price Extra File
+                </p>
+                <group>
+                    <field name="data"/>
+                </group>
+                <footer>
+                    <button name="import_variant_price" type="object"
+                        id="button_import_variant_price"
+                        string="import"
+                        class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_variant_price_import" model="ir.actions.act_window">
+        <field name="name">Variant Price Import</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">variant.price.import</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_variant_price_import"
+        action="action_view_variant_price_import"
+        parent="stock.menu_product_in_config_stock" sequence="5"/>
+
+</odoo>
