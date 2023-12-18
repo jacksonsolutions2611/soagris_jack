@@ -1,0 +1,60 @@
+Main
+--------------------------------------------------------------------------------------------
+
+Company Type                                                    Selection
+Main Business                                                   TextArea
+Full Supplier Name (local language/Chinese)                     Char
+Address in local language (Chinese)                             Char
+Associated trading companies and manufacturers                  M2M       res.partner         Not In Portal	
+
+
+Commercial I
+--------------------------------------------------------------------------------------------
+
+Export License available                                        CheckBox
+Business License Number                                         Char
+BSCI Level                                                      Char
+Prime markets (China,EU,USA etc.)in %                           Char
+Main Product group in % of total turnover                       Char
+Reference customers (Top customers) in % and market             Char
+IT equipment ERP-System(e.g. SAP)                               Char
+Do you have a product liability insurance?                      Char
+
+
+
+Technical 
+--------------------------------------------------------------------------------------------
+
+Certifications                                                  M2M      Supplier Certification               Need to restructure
+Product                                                         M2M      Supplier.Technologies.tags           Make It Char Field
+Production Technologies                                         M2M      supplier.technologies                Need to restructure
+Surface Treatment                                               M2M      surface.tratment                     Need to restructure      
+Material	                                                    M2M      surface.material                     Need to restructure
+Laboratory and testing equipment                                TextArea
+Capability to design and make tools(not outsourcing)            Char 
+Product Development capabilities                                Char
+
+
+
+Commercial II
+--------------------------------------------------------------------------------------------
+
+Total number of employees	                                    Interger
+Employees in QM department	                                    Interger
+Employees in R & D department	                                Interger
+Company: Turnover last year (USD)	                            Interger       Add Currency Selction
+Group Turnover last year (USD)                                  Interger       Add Currency Selction
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+05  Integer                |  16  Availabale on Portal
+11  Char                   |
+02  TextArea               |
+06  M2M 
+01  Selection
+01  CheckBox
+--------------
+26  Fields
